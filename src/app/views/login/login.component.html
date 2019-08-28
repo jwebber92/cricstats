@@ -6,21 +6,23 @@
           <h3>Login Form</h3>
           <p>Log in to view incredible cricket stats</p>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
+            <label for="inputEmail">Email address</label>
+            <input #inputEmail
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
+              id="inputEmail"
               placeholder="Email"
+              required
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input
+            <label for="inputPassword">Password</label>
+            <input #inputPassword
               type="password"
               class="form-control"
-              id="exampleInputPassword1"
+              id="inputPassword"
               placeholder="Password"
+              required
             />
           </div>
 
@@ -29,6 +31,7 @@
               type="buton"
               class="btn btn-primary btn-block"
               style="margin-bottom: 20px"
+              (click)="login(inputEmail.value, inputPassword.value)"
             >
               Login
             </button>
