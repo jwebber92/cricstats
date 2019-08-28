@@ -2,6 +2,11 @@
     <div class="container">
         <div class="home__page">
             <h1>Welcome to the home page!</h1>
+            <ul>
+                <li *ngFor="let country of countries | async">
+                    {{ country.name }}
+                </li>
+            </ul>
         </div>
     </div>
 </div>
