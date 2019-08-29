@@ -5,7 +5,13 @@
             <h3>Select a country to view the current players</h3>
             <ul>
                 <li *ngFor="let country of countries | async">
-                    {{ country.name }}
+                    <button
+                        type="buton"
+                        class="btn btn-primary btn-block"
+                        (click)="viewSquad(country.name)"
+                    >
+                        {{ country.name }}
+                    </button>
                 </li>
             </ul>
         </div>

@@ -14,7 +14,7 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'squad',
+        path: 'squad/:country',
         component: SquadComponent
     }
 ];
