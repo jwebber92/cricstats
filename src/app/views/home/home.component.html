@@ -4,15 +4,14 @@
             <h1>Welcome to the home page!</h1>
             <h3>Select a country to view the current players</h3>
             <ul>
-                <li *ngFor="let country of countries | async">
-                    <button
-                        type="buton"
-                        class="btn btn-primary btn-block"
-                        (click)="viewSquad(country.name)"
-                    >
-                        {{ country.name }}
-                    </button>
-                </li>
+                <button *ngFor="let country of countries | async"
+                    type="buton"
+                    class="btn btn-primary btn-block"
+                    (click)="viewSquad(country.name)"
+                    style="margin:20px; height:30px; width:100px"
+                >
+                    {{ country.name }}
+                </button>
             </ul>
         </div>
     </div>

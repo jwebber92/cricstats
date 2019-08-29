@@ -2,11 +2,19 @@
     <div class="container">
         <div class="squad__page">
             <h3>Current players for {{country}}</h3>
-            <ul>
-                <li *ngFor="let player of players | async">
-                    {{ player.name }}
-                </li>
-            </ul>
+            <table
+                border=1
+                style="padding:10px; margin:5px"
+            >
+                <tr>
+                    <td>Player Name</td>
+                    <td>Bat / Bowl</td>
+                </tr>
+                <tr *ngFor="let player of players | async">
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.position }}</td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
