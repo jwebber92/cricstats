@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+      "target": "https://cricket.sportmonks.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }
