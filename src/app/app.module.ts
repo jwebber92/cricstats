@@ -12,12 +12,14 @@ import { AppRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { HomeComponent } from './views/home/home.component';
+import { SquadComponent } from './views/squad/squad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    SquadComponent
   ],
   imports: [
     BrowserModule,

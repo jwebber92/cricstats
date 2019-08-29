@@ -1,0 +1,12 @@
+<div class="main__body">
+    <div class="container">
+        <div class="squad__page">
+            <h3>Current players for England</h3>
+            <ul>
+                <li *ngFor="let player of players | async">
+                    {{ player.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
